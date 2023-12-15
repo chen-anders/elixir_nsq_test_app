@@ -24,7 +24,7 @@ defmodule ElixirNsqTestApp.MixProject do
     [
       {:plug_cowboy, "~> 2.0"},
       {:jason, "~> 1.4"},
-      {:elixir_nsq, "~> 1.1.0"}
+      {:elixir_nsq, github: "benonymus/elixir_nsq", branch: "tweak_child_specs"}
     ]
   end
 end

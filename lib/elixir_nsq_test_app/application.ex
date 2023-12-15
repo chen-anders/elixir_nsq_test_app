@@ -22,7 +22,7 @@ defmodule ElixirNsqTestApp.Application do
           :start_link,
           [
             "my-queue",
-            %NSQ.Config{nsqds: ["127.0.0.1:4150"]},
+            %NSQ.Config{nsqds: ["127.0.0.1:14150"]},
             [name: @my_queue]
           ]
         }
@@ -36,7 +36,7 @@ defmodule ElixirNsqTestApp.Application do
             "my-queue",
             "my-channel",
             %NSQ.Config{
-              nsqlookupds: ["127.0.0.1:4161"],
+              nsqlookupds: ["127.0.0.1:14161"],
               message_handler: ElixirNsqTestApp.MessageHandler
             }
           ]

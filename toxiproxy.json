@@ -1,0 +1,14 @@
+[
+  {
+    "name": "nsqlookupd-4161",
+    "listen": "[::]:14161",
+    "upstream": "127.0.0.1:4161",
+    "enabled": true
+  },
+  {
+    "name": "nsqd-4150",
+    "listen": "[::]:14150",
+    "upstream": "127.0.0.1:4150",
+    "enabled": true
+  }
+]
